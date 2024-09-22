@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    
+}
+.gallery-container {
+    display: flex;
+    padding: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.container.ambulanceType {
+    text-align: center;
+}
+.red {
+    background-color: red;
+    padding: 2px;
+    font-weight: 900;
+    color: white;
+    border-radius: 11px soild white;
+    margin-top: 6px;
+}
+
+.booking-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.booking-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-info h4, .booking-info p {
+    margin-bottom: 8px;
+}
+
+.booking-info .hospital, .booking-info .customer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.booking-info .hospital img, .booking-info .customer img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.booking-info .hospital h4, .booking-info .customer h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.booking-info .hospital p, .booking-info .customer p {
+    font-size: 14px;
+    color: #555;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pending {
+    background-color: #ff9800; /* Màu nền cho phần weight */
+    color: #fff; /* Màu chữ */
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.price {
+    margin-top: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.details a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+
+.booking-card {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Để căn chỉnh phần status */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.booking-info {
+    display: flex;
+    flex-direction: column; /* Chiều dọc */
+}
+
+.booking-detail {
+    padding: 10px;
+    margin-top: 10px; /* Cách phần trên một chút */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hospital, .customer {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; /* Cách đều giữa các phần */
+}
+
+.status, .details {
+    margin: 10px 0;
+}
+
+.status {
+    position: absolute;
+    top: 15px; /* Khoảng cách từ trên xuống */
+    right: 15px; /* Khoảng cách từ phải vào */
+    text-align: right; /* Căn chữ về bên phải */
+}
+
+.details {
+    align-self: flex-end; /* Căn phải */
+}
+
+.details button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.details button:hover {
+    background-color: #0056b3;
+}
